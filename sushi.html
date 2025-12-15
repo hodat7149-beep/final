@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Nhật Bản — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html" class="active">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">SUSHI</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VzaGl8ZW58MHx8MHx8fDA%3D" alt="Sushi Nhật Bản" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Sushi - Nghệ thuật ẩm thực tinh tế của Nhật Bản</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Sushi là món ăn nổi tiếng nhất của Nhật Bản, bao gồm cơm trộn giấm (sumeshi) kết hợp với các loại hải sản tươi sống hoặc đã nấu chín, rau củ và đôi khi được cuộn trong rong biển Nori. Đây là một nghệ thuật ẩm thực tinh tế và cân bằng, không chỉ là món ăn mà còn là biểu tượng của văn hóa Nhật Bản.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Sushi bắt nguồn từ món ăn bảo quản cá bằng cách ủ trong cơm gạo tại Đông Nam Á. Mãi đến thời Edo (thế kỷ 17-19) ở Nhật Bản, việc ăn cá tươi với cơm trộn giấm mới trở nên phổ biến, dần hình thành nên món Sushi ngày nay.
+                </p>
+                <ul>
+                    <li><strong>Các Biến Thể:</strong> Có nhiều loại Sushi như <strong>Nigiri</strong> (cơm nắm bên trên là lát cá), <strong>Maki</strong> (cơm cuộn rong biển), <strong>Temaki</strong> (cơm cuộn hình nón) và <strong>Chirashi</strong> (cơm trong bát với hải sản rải phía trên).</li>
+                    <li><strong>Sự Thật Thú Vị:</strong> Gừng ngâm chua (Gari) được dùng để làm sạch vị giác giữa các lần ăn các loại Sushi khác nhau. Đầu bếp Sushi (Itamae) phải mất nhiều năm rèn luyện kỹ năng.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Mặc dù việc làm Sushi đòi hỏi kỹ năng cao của đầu bếp chuyên nghiệp, bạn vẫn có thể thử làm các loại Sushi cuộn đơn giản (Maki) tại nhà.</p>
+
+                <h3>1. Nấu và trộn cơm (Sumeshi)</h3>
+                <ul>
+                    <li>Nấu cơm theo tỉ lệ (ví dụ: 1 phần gạo, 1 phần nước).</li>
+                    <li>Trộn giấm gạo, đường và muối để tạo thành hỗn hợp giấm.</li>
+                    <li>Khi cơm chín, cho hỗn hợp giấm vào cơm khi còn nóng, nhẹ nhàng trộn đều.</li>
+                </ul>
+
+                <h3>2. Chuẩn bị nhân</h3>
+                <ul>
+                    <li>Cắt hải sản (cá hồi, cá ngừ) hoặc rau củ (dưa chuột, bơ) thành lát mỏng, dài.</li>
+                </ul>
+
+                <h3>3. Cuộn Sushi (Maki)</h3>
+                <ul>
+                    <li>Đặt tấm rong biển Nori lên mành tre. Trải một lớp mỏng cơm Sumeshi lên Nori (chừa lại mép).</li>
+                    <li>Đặt nhân dọc theo giữa. Dùng mành tre cuộn chặt lại.</li>
+                    <li>Dùng dao sắc nhúng nước để cắt cuộn Sushi thành các miếng vừa ăn.</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm món Sushi cơ bản tại nhà:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v8EvBRWo9No?si=EMjRqgQZGyDJmk6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

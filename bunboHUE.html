@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún Bò Huế — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html" class="active">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">BÚN BÒ HUẾ</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1597345637412-9fd611e758f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bún Bò Huế" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Tô Bún Bò Huế cay nồng, đậm đà.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Bún Bò Huế (Hue Style Beef Noodle Soup) là một món ăn truyền thống nổi tiếng của thành phố Huế, Việt Nam. Đặc trưng của món ăn là nước dùng đậm đà hương vị **sả, mắm ruốc**, vị cay nồng và sợi bún to hơn bún thường. Món này thường ăn kèm với thịt bò (thịt bắp, gân), giò heo và chả cua.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Bún Bò Huế có nguồn gốc từ Huế, cố đô của Việt Nam. Món ăn này thể hiện sự tinh tế trong ẩm thực cung đình, kết hợp hài hòa giữa hương vị và màu sắc.
+                </p>
+                <ul>
+                    <li><strong>Mắm ruốc:</strong> Thành phần quan trọng nhất tạo nên hương vị đặc trưng không thể nhầm lẫn của Bún Bò Huế.</li>
+                    <li><strong>Màu sắc:</strong> Màu đỏ cam hấp dẫn của nước dùng là từ dầu điều (annatto oil).</li>
+                    <li><strong>Sợi bún:</strong> Bún Bò Huế sử dụng loại bún lớn hơn (bún bò) so với bún thường.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Nấu Bún Bò Huế cần sự tỉ mỉ trong khâu chuẩn bị nước dùng.</p>
+
+                <h3>1. Nước dùng</h3>
+                <ul>
+                    <li>Hầm xương bò và xương giò heo với sả đập dập, hành tây và nêm nếm bằng mắm ruốc Huế.</li>
+                    <li>Tạo màu cho nước dùng bằng dầu điều và nêm nếm cho vừa miệng, có vị cay nhẹ.</li>
+                </ul>
+
+                <h3>2. Chuẩn bị Topping</h3>
+                <ul>
+                    <li>Thịt bò được thái mỏng, có thể nhúng tái hoặc luộc chín. Giò heo được luộc mềm.</li>
+                    <li>Sợi bún được chần qua nước sôi.</li>
+                </ul>
+
+                <h3>3. Trình bày</h3>
+                <ul>
+                    <li>Cho bún vào tô, xếp thịt bò, giò heo, chả cua lên trên.</li>
+                    <li>Chan nước dùng nóng hổi. Ăn kèm với rau sống, bắp chuối, rau thơm và chanh ớt.</li>
+                </ul>
+
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách nấu Bún Bò Huế chuẩn vị cung đình:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A_o2qfaTgKs?si=IpeNIj9O_Svh15jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

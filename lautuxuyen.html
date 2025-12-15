@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lẩu Tứ Xuyên — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html" class="active">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">LẨU TỨ XUYÊN</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://i.imgur.com/rP3j6xO.jpeg" alt="Bếp lẩu Tứ Xuyên nóng hổi với nước dùng cay rực." style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Bếp lẩu Tứ Xuyên nóng hổi với nước dùng cay rực.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Lẩu Tứ Xuyên (Sichuan Hot Pot) là một phong cách lẩu nổi tiếng thế giới, có nguồn gốc từ vùng Tứ Xuyên và Trùng Khánh (Trung Quốc). Đặc trưng của món lẩu này là **nước dùng cay nồng, đậm đà** với lượng lớn **ớt khô, tiêu Tứ Xuyên (Mala)** và dầu ớt, tạo ra cảm giác tê rần ở đầu lưỡi.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Lẩu Tứ Xuyên ban đầu là món ăn của những người lao động nghèo ở vùng sông nước, sử dụng nội tạng và các loại thịt giá rẻ nhúng vào nước dùng cay để át đi mùi tanh.
+                </p>
+                <ul>
+                    <li><strong>Yin Yang Pot:</strong> Nhiều nhà hàng phục vụ "lẩu âm dương" (nồi chia đôi) để cân bằng giữa nước lẩu cay Tứ Xuyên và nước lẩu không cay/thảo mộc.</li>
+                    <li><strong>Tiêu Tứ Xuyên:</strong> Đây là loại tiêu đặc trưng tạo ra cảm giác "tê" (Ma) trên lưỡi, kết hợp với vị cay (La) của ớt để tạo nên hương vị "Mala" độc đáo.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Nấu nước lẩu Tứ Xuyên đòi hỏi nhiều loại gia vị đặc trưng và phương pháp hầm kỹ lưỡng.</p>
+
+                <h3>1. Nước dùng cay (Mala Base)</h3>
+                <ul>
+                    <li>Phi thơm ớt khô, tiêu Tứ Xuyên, hoa hồi, quế, thảo quả, gừng và tỏi trong dầu ớt.</li>
+                    <li>Thêm nước dùng xương hoặc nước lọc, đun sôi và nêm nếm gia vị lẩu Tứ Xuyên chuyên dụng.</li>
+                </ul>
+
+                <h3>2. Chuẩn bị Topping</h3>
+                <ul>
+                    <li>Thịt bò, thịt heo, nội tạng được thái lát rất mỏng. Chuẩn bị các loại rau củ, nấm, đậu phụ.</li>
+                </ul>
+
+                <h3>3. Thưởng thức</h3>
+                <ul>
+                    <li>Đặt nồi lẩu lên bếp. Khi nước lẩu sôi, nhúng từng lát thịt, rau củ vào nước lẩu cho đến khi chín tới.</li>
+                    <li>Thưởng thức cùng nước chấm (thường là dầu mè, tỏi băm).</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách nấu lẩu Tứ Xuyên chuẩn vị Mala cay tê:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rUpdkHoWZNE?si=VFODphqxNKFtaA4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

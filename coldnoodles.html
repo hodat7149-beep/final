@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Noodles (Naengmyeon) Hàn Quốc — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html" class="active">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">COLD NOODLES (NAENGMYEON)</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1579576792017-054fe0e86b79?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cold Noodles (Naengmyeon) Hàn Quốc" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Mì lạnh Naengmyeon giải nhiệt mùa hè.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Naengmyeon là một món mì lạnh truyền thống của Triều Tiên (nay là Hàn Quốc và Bắc Triều Tiên). Món ăn này bao gồm mì sợi mỏng, dai được phục vụ trong một bát lớn nước dùng **súp lạnh, giấm, và mù tạt**, thường được phủ lên bằng dưa chuột, lê Hàn Quốc, trứng luộc, và thịt bò. Đây là món ăn cực kỳ phổ biến vào mùa hè.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Naengmyeon có nguồn gốc từ khu vực nay là Bắc Triều Tiên (Pyongyang và Hamhung) và ban đầu được thưởng thức vào mùa đông. Sau chiến tranh Triều Tiên, món ăn này đã lan rộng khắp Hàn Quốc.
+                </p>
+                <ul>
+                    <li><strong>Mul Naengmyeon:</strong> Loại mì nước lạnh, phổ biến ở Pyongyang.</li>
+                    <li><strong>Bibim Naengmyeon:</strong> Loại mì trộn với nước sốt cay Gochujang, phổ biến ở Hamhung.</li>
+                    <li><strong>Sợi mì:</strong> Thường được làm từ kiều mạch, đôi khi có thêm khoai tây, tạo độ dai đặc trưng, cần phải dùng kéo để cắt khi ăn.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Để món mì lạnh đạt chuẩn, nước dùng phải thật sự lạnh và sợi mì phải dai ngon.</p>
+
+                <h3>1. Chuẩn bị nước dùng</h3>
+                <ul>
+                    <li>Nước dùng xương bò hoặc củ cải được làm lạnh và có thể thêm đá bào. Nêm nếm với giấm và một chút đường/muối.</li>
+                </ul>
+
+                <h3>2. Luộc mì</h3>
+                <ul>
+                    <li>Sợi mì kiều mạch được luộc nhanh, sau đó phải xả ngay dưới vòi nước lạnh và xóc cho thật ráo.</li>
+                </ul>
+
+                <h3>3. Trình bày</h3>
+                <ul>
+                    <li>Cho mì vào tô, xếp dưa chuột thái sợi, lê, trứng luộc và thịt bò lên trên.</li>
+                    <li>Chan nước dùng lạnh vào ngập tô. Thêm mù tạt vàng và giấm khi thưởng thức.</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Naengmyeon (Mì Lạnh) giải nhiệt đúng kiểu Hàn Quốc:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O6J3xBJNTlo?si=4yrJuNv1QiXFcTxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

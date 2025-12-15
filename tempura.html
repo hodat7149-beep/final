@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempura Nhật Bản — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html" class="active">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">TEMPURA NHẬT BẢN</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1651328236028-77b585d3f4e5?q=80&w=1470&auto=format&fit=crop" alt="Tempura Nhật Bản" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Tempura chiên giòn tinh tế</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Tempura là món ăn truyền thống nổi tiếng của Nhật Bản, gồm các loại hải sản và rau củ được tẩm bột mỏng rồi chiên giòn nhẹ, giữ được hương vị tươi ngon bên trong và lớp vỏ ngoài vàng giòn hấp dẫn.
+                </p>
+                <br>
+                
+                <h2>Nguyên Liệu Chính</h2>
+                <ul>
+                    <li>Tôm, mực hoặc cá</li>
+                    <li>Khoai lang, cà rốt, bí xanh, ớt chuông</li>
+                    <li>Bột mì, Trứng, Nước lạnh</li>
+                    <li>Dầu để chiên</li>
+                    <li>Muối, nước sốt tempura (tsuyu)</li>
+                </ul>
+                <br>
+
+                <h2>Cách Nấu Chi Tiết</h2>
+                <ol>
+                    <li><strong>Chuẩn bị:</strong> Rửa sạch và để ráo hải sản, rau củ.</li>
+                    <li><strong>Pha bột:</strong> Pha bột tempura từ bột mì, trứng và nước lạnh — **không khuấy quá kỹ** để bột được nhẹ.</li>
+                    <li><strong>Chiên:</strong> Nhúng hải sản và rau vào bột, chiên nhanh ở nhiệt độ cao (khoảng 170°C - 180°C) đến khi vàng giòn.</li>
+                    <li><strong>Hoàn thành:</strong> Vớt ra để ráo dầu. Chuẩn bị nước chấm tempura (tsuyu) từ dashi, mirin, nước tương và đường.</li>
+                </ol>
+                <br>
+
+                <h2>Video Hướng Dẫn</h2>
+                <p>Xem video dưới đây để biết cách làm Tempura Nhật Bản chuẩn vị:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X6KM-65fveQ?si=_O5SmS1gdxGKqP6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <h2>Nguồn gốc & Sự Thật Thú Vị (Facts)</h2>
+                <p>
+                    Tempura có nguồn gốc từ thế kỷ 16, được du nhập từ Bồ Đào Nha và sau đó được Nhật Bản biến tấu thành món đặc sản nổi tiếng với phong cách chiên giòn tinh tế.
+                </p>
+                <ul>
+                    <li><strong>Trình bày:</strong> Xếp các miếng tempura xen kẽ rau củ và hải sản lên đĩa dài. Dọn kèm nước sốt tempura để chấm.</li>
+                    <li><strong>FACTS:</strong> Tempura từng được xem là “món sang trọng” trong thời Edo. Tại Nhật, tempura thường dùng kèm cơm hoặc mì soba/udon.</li>
+                </ul>
+                <br>
+
+                <h2>Phần Bình Luận</h2>
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+</body>
+</html>

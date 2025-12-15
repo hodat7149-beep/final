@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorayaki Nhật Bản — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html" class="active">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">DORAYAKI</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1626497132810-f38eb29c5385?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dorayaki" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Bánh Dorayaki nhân đậu đỏ truyền thống.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Dorayaki là một loại bánh ngọt truyền thống của Nhật Bản, bao gồm hai lớp bánh pancake tròn dẹt làm từ bột mì, trứng và mật ong, kẹp giữa là nhân đậu đỏ ngọt (Anko). Bánh có hương vị thơm ngon, mềm mịn và thường được dùng như món tráng miệng hoặc ăn vặt.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Dorayaki xuất hiện lần đầu tiên vào đầu thế kỷ 20, nhưng phiên bản hiện đại với hai lớp bánh chỉ phổ biến sau năm 1914. Cái tên "Dorayaki" có nghĩa là "chiên/nướng bằng cồng" (Dora - cồng, Yaki - nướng/chiên), vì hình dạng của bánh giống chiếc cồng nhỏ.
+                </p>
+                <ul>
+                    <li><strong>Món ăn của Doraemon:</strong> Dorayaki trở nên nổi tiếng trên toàn thế giới nhờ là món ăn yêu thích của nhân vật hoạt hình Doraemon.</li>
+                    <li><strong>Nhân bánh đa dạng:</strong> Mặc dù nhân Anko (đậu đỏ) là truyền thống, Dorayaki ngày nay còn có các loại nhân khác như kem hạt dẻ, sô cô la, hoặc kem tươi.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Để làm Dorayaki tại nhà, bạn cần chuẩn bị bột bánh và nhân Anko.</p>
+
+                <h3>1. Pha và chiên bánh</h3>
+                <ul>
+                    <li>Trộn bột mì, trứng, đường, mật ong và một chút baking soda để tạo hỗn hợp bột sánh mịn.</li>
+                    <li>Đổ từng muỗng bột lên chảo không dính nóng, chiên mỗi mặt cho đến khi vàng nâu và phồng lên.</li>
+                </ul>
+
+                <h3>2. Hoàn thiện</h3>
+                <ul>
+                    <li>Để bánh nguội. Sau đó, phết một lớp nhân đậu đỏ Anko dày vào giữa hai lớp bánh.</li>
+                    <li>Ép nhẹ để nhân dính đều và hai miếng bánh dính lại với nhau.</li>
+                </ul>
+                
+                <h3>3. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Dorayaki mềm xốp tại nhà:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DI4wLOW_wLU?si=_jo-yTSTcxM9XIyV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

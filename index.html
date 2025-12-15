@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Snacken — Home</title>
+  
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+  <canvas id="snow"></canvas>
+
+  <canvas id="bg3d"></canvas>
+
+  <header class="navbar"> 
+    <div class="logo">Snacken.</div> 
+
+    <nav class="menu"> 
+      <a href="index.html" class="active">Home</a>
+      <a href="japanese.html">Nhật Bản</a>
+      <a href="Korea.html">Hàn Quốc</a>
+      <a href="china.html">Trung Quốc</a>
+      <a href="Vietnam.html">Việt Nam</a>
+    </nav>
+
+    <div class="menu-btn" id="menu-btn">☰</div> 
+  </header>
+
+  <section id="home" class="hero"> 
+    <div class="home-content">
+      <h1 class="title">Snacken.</h1>
+      <p class="subtitle">Khám phá hương vị thế giới, bắt đầu từ Châu Á.</p>
+      
+      <div class="actions">
+        <a href="Vietnam.html" class="btn">Việt Nam</a>
+        <a href="japanese.html" class="btn">Nhật Bản</a>
+        <a href="Korea.html" class="btn">Hàn Quốc</a>
+        <a href="china.html" class="btn">Trung Quốc</a>
+      </div>
+      </div>
+  </section>
+
+  <section class="section about"> 
+    <div class="text"> 
+      <h2>Về Snacken</h2>
+      <p>
+        Snacken là trang web giúp bạn tìm hiểu những món ăn truyền thống nổi tiếng từ
+        Nhật Bản, Hàn Quốc, Trung Quốc và Việt Nam. Mỗi món ăn đều mang một câu chuyện,
+        hương vị và nét văn hóa đặc trưng riêng.
+      </p>
+    </div>
+  </section>
+  
+  <div class="footer">
+    <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+  </div>
+
+
+  <script src="background.js"></script>
+  <script src="snow.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        if (typeof createSnow === 'function') {
+            createSnow();
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    };
+  </script>
+
+</body>
+</html>

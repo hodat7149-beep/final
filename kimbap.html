@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimbap Hàn Quốc — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html" class="active">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">KIMBAP</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1608731002187-d3448d224d18?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kimbap cuộn rong biển với nhiều loại nhân khác nhau" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Kimbap cuộn rong biển với nhiều loại nhân khác nhau.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Kimbap là một món ăn truyền thống Hàn Quốc, được làm từ **cơm (bap) cuộn trong lá rong biển khô (Kim)**, chứa nhiều loại nhân đa dạng như rau củ, trứng, thịt bò xào (bulgogi), hoặc cá ngừ. Kimbap là món ăn dã ngoại (picnic) và ăn nhẹ phổ biến tại Hàn Quốc.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Món ăn này có hình thức tương tự như Maki-sushi của Nhật, nhưng Kimbap có hương vị khác biệt do cơm được nêm nếm bằng dầu mè và muối, thay vì giấm như sushi.
+                </p>
+                <ul>
+                    <li><strong>Tên gọi:</strong> "Kim" là lá rong biển khô, "Bap" là cơm.</li>
+                    <li><strong>Biến thể:</strong> Có nhiều loại Kimbap, nổi tiếng là Chungmu Kimbap (Kimbap nhỏ, không nhân, ăn kèm củ cải muối cay) và Samgak Kimbap (Kimbap tam giác).</li>
+                    <li><strong>Nêm nếm:</strong> Cơm Kimbap truyền thống được trộn với dầu mè và muối để tạo hương thơm đặc trưng.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Bí quyết làm Kimbap ngon là cuộn chặt tay và nhân được sơ chế đúng cách.</p>
+
+                <h3>1. Chuẩn bị nhân</h3>
+                <ul>
+                    <li>Các loại rau củ (cà rốt, dưa chuột, cải bó xôi) được thái sợi và xào nhẹ hoặc chần. Trứng tráng mỏng thái sợi.</li>
+                    <li>Thịt (thường là thanh cua, xúc xích, hoặc thịt bò bulgogi) được nấu chín.</li>
+                </ul>
+
+                <h3>2. Trộn cơm</h3>
+                <ul>
+                    <li>Cơm nóng được trộn với dầu mè, muối và hạt mè rang, để nguội bớt.</li>
+                </ul>
+
+                <h3>3. Cuộn Kimbap</h3>
+                <ul>
+                    <li>Trải lá rong biển lên mành tre, dàn mỏng cơm lên khoảng 2/3 lá rong biển.</li>
+                    <li>Xếp các loại nhân thành hàng ngang ở giữa và cuộn chặt tay bằng mành tre.</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Kimbap (Cơm cuộn rong biển) Hàn Quốc chuẩn vị:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qzG3i-Kbyks?si=GoHKAx98y-zioHKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

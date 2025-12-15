@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry Rice (Cơm Cà Ri) Nhật Bản — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html" class="active">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">CURRY RICE (CƠM CÀ RI)</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1729824159986-376b49c6b7e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Curry Rice (Cơm Cà Ri) Nhật Bản" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Cơm Cà Ri Nhật Bản đậm đà, béo ngậy.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Curry Rice (Kare Raisu) là một trong những món ăn phổ biến và được yêu thích nhất ở Nhật Bản. Mặc dù có nguồn gốc từ Ấn Độ, nhưng cà ri Nhật Bản đã được **biến tấu để trở nên sánh, đậm và ít cay hơn** so với cà ri Ấn Độ, thường chứa thịt (bò, gà hoặc heo) và các loại rau củ như hành tây, cà rốt và khoai tây, ăn kèm với cơm trắng.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Cà ri được người Anh mang đến Nhật Bản vào thời kỳ Meiji (1868–1912). Người Nhật đã điều chỉnh công thức để phù hợp với khẩu vị của họ, và món ăn này nhanh chóng được chấp nhận và trở thành một món ăn "quốc dân".
+                </p>
+                <ul>
+                    <li><strong>Món ăn thường ngày:</strong> Cà ri là một món ăn nhanh, tiện lợi và được nấu thường xuyên tại các gia đình Nhật Bản.</li>
+                    <li><strong>Cà ri khối (Roux):</strong> Hầu hết người Nhật sử dụng cà ri đóng hộp dạng khối (roux) để nấu, giúp món ăn sánh và nhanh chóng hơn.</li>
+                    <li><strong>Katsu Curry:</strong> Một biến thể nổi tiếng là Katsu Curry (Cơm Cà Ri với thịt heo chiên xù giòn).</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Cà ri Nhật Bản có thể được nấu đơn giản bằng cách sử dụng cà ri khối.</p>
+
+                <h3>1. Sơ chế</h3>
+                <ul>
+                    <li>Thịt và rau củ (hành tây, cà rốt, khoai tây) được cắt miếng vừa ăn.</li>
+                </ul>
+
+                <h3>2. Nấu cà ri</h3>
+                <ul>
+                    <li>Xào thịt và rau củ cho săn. Thêm nước và đun nhỏ lửa cho đến khi rau củ mềm.</li>
+                    <li>Tắt bếp, cho cà ri khối vào và khuấy tan. Bật bếp lại, đun nhỏ lửa cho sốt cà ri sánh lại.</li>
+                </ul>
+
+                <h3>3. Trình bày</h3>
+                <ul>
+                    <li>Cơm trắng được bày ra đĩa. Sốt cà ri được múc lên một nửa đĩa cơm.</li>
+                    <li>Có thể ăn kèm với Fukujinzuke (dưa muối chua ngọt của Nhật).</li>
+                </ul>
+
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Curry Rice (Cơm Cà Ri) Nhật Bản đơn giản tại nhà:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CqSkViepzhM?si=mkZ35_7u1N0p1G3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

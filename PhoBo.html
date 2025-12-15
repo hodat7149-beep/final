@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phở Bò Việt Nam — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html" class="active">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">PHỞ BÒ VIỆT NAM</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phở Bò Việt Nam" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Phở Bò - Biểu tượng ẩm thực Việt</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Phở Bò là món ăn truyền thống nổi tiếng nhất của Việt Nam, bao gồm bánh phở, thịt bò (có thể là tái, chín, nạm, gầu), và nước dùng (nước lèo) được hầm từ xương bò và các loại gia vị thơm như gừng, hành, hồi, quế, thảo quả. Phở Bò không chỉ là một món ăn mà còn là biểu tượng văn hóa.
+                </p>
+                <br>
+                
+                <h2>Nguyên Liệu Chính</h2>
+                <ul>
+                    <li>Bánh phở tươi hoặc khô.</li>
+                    <li>Thịt bò: nạm, gầu, lõi rùa, bắp hoa hoặc thịt bò tái.</li>
+                    <li>Xương bò (xương ống, xương cục).</li>
+                    <li>Gia vị hầm: Gừng, hành tây, hồi, quế, thảo quả, đinh hương.</li>
+                    <li>Rau ăn kèm: Hành lá, ngò gai, giá đỗ, chanh, ớt, rau thơm.</li>
+                </ul>
+                <br>
+
+                <h2>Cách Nấu Chi Tiết</h2>
+                <p>Để nấu Phở Bò ngon, bước quan trọng nhất là hầm nước dùng (nước lèo) đậm đà:</p>
+                <ol>
+                    <li><strong>Hầm Xương:</strong> Xương bò phải được rửa sạch, chần qua nước sôi rồi hầm trong nhiều giờ (thường là 8-10 tiếng) để lấy nước ngọt thanh.</li>
+                    <li><strong>Nướng Gia Vị:</strong> Gừng, hành tây, hồi, quế, thảo quả được nướng thơm trước khi cho vào nồi nước dùng để tạo mùi hương đặc trưng, sau đó nêm nếm gia vị cho vừa.</li>
+                    <li><strong>Chuẩn bị Bánh & Thịt:</strong> Bánh phở trần qua nước sôi. Thịt bò thái mỏng (thịt tái) hoặc thái lát (thịt chín).</li>
+                    <li><strong>Hoàn thành:</strong> Xếp bánh phở, thịt, hành tây thái mỏng, hành lá, ngò lên trên, sau đó **chan nước dùng thật nóng** để làm chín thịt tái và làm ấm bánh phở.</li>
+                </ol>
+                <br>
+
+                <h2>Video Hướng Dẫn</h2>
+                <p>Xem video dưới đây để biết cách nấu Phở Bò chuẩn vị Việt Nam:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c9GfHgMk1ac?si=BKfoPdz5cgwrC9Xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Phở Bò có nguồn gốc từ miền Bắc Việt Nam và dần phổ biến khắp cả nước. Sự khác biệt giữa Phở Bắc (thanh, ít rau thơm) và Phở Nam (ngọt, nhiều rau thơm) tạo nên sự đa dạng cho món ăn.
+                </p>
+                <ul>
+                    <li><strong>Ý nghĩa văn hóa:</strong> Phở có mặt ở mọi nẻo đường từ các gánh hàng rong đến nhà hàng sang trọng.</li>
+                    <li><strong>Bánh Phở:</strong> Loại bánh làm từ bột gạo, khác với các loại mì khác.</li>
+                </ul>
+                <br>
+
+                <h2>Phần Bình Luận</h2>
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+</body>
+</html>

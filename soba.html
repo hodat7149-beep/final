@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mì Soba Nhật Bản — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html" class="active">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">MÌ SOBA NHẬT BẢN</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1657375624237-d1d1ce037c64?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mì Soba Nhật Bản" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Mì Soba - Thưởng thức nóng hoặc lạnh</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Soba là loại mì truyền thống của Nhật Bản được làm chủ yếu từ **bột kiều mạch**. Sợi mì có màu nâu nhạt, dai và có hương vị hạt dẻ đặc trưng. Soba có thể được ăn **nóng** với nước dùng dashi đậm đà hoặc ăn **lạnh** với nước chấm tsuyu thanh mát.
+                </p>
+                <br>
+                
+                <h2>Nguyên Liệu Chính</h2>
+                <ul>
+                    <li>Sợi mì làm từ bột kiều mạch (soba-ko).</li>
+                    <li>Nước dùng dashi (cho món nóng) hoặc nước chấm tsuyu (cho món lạnh).</li>
+                    <li>Thường ăn kèm với hành lá, rong biển nori xắt sợi, hoặc tempura.</li>
+                </ul>
+                <br>
+
+                <h2>Cách Nấu Chi Tiết</h2>
+                <p>Cách chế biến Soba phụ thuộc vào việc bạn muốn ăn nóng hay lạnh:</p>
+                <ol>
+                    <li><strong>Luộc mì:</strong> Luộc mì Soba trong nước sôi theo hướng dẫn. Mì kiều mạch chín rất nhanh.</li>
+                    <li><strong>Chuẩn bị Soba Lạnh (Zaru Soba):</strong> Sau khi luộc, rửa mì ngay dưới vòi nước lạnh để làm nguội nhanh và giữ độ dai. Xếp mì lên rổ tre và dọn kèm nước chấm **tsuyu** lạnh và hành lá/wasabi.</li>
+                    <li><strong>Chuẩn bị Soba Nóng (Kake Soba):</strong> Làm nóng nước dùng **dashi** đã nêm nếm (mirin, nước tương). Cho mì đã luộc vào bát, sau đó chan nước dùng nóng. Thêm topping tùy thích như trứng, thịt hoặc tempura.</li>
+                </ol>
+                <br>
+
+                <h2>Video Hướng Dẫn</h2>
+                <p>Xem video dưới đây để biết cách làm và thưởng thức Mì Soba:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aOFErLjRVT0?si=n2CA0FKGY9G6spE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <h2>Lịch Sử, Văn Hóa & Sự Thật Thú Vị (Facts)</h2>
+                <p>
+                    Soba đã được người Nhật ăn từ thời Edo, trở thành một món ăn nhanh phổ biến. Đặc biệt, món Soba được ăn vào đêm giao thừa (**Toshikoshi Soba**) với niềm tin mang lại sức khỏe và tuổi thọ cho năm mới.
+                </p>
+                <ul>
+                    <li>**Biến Thể:** Phổ biến nhất là **Zaru Soba** (mì lạnh chấm tsuyu), **Kake Soba** (mì nóng nước dùng) và **Tempura Soba** (có tôm/rau củ chiên giòn).</li>
+                    <li>**Lợi ích sức khỏe:** Mì Soba được coi là một món ăn lành mạnh vì kiều mạch rất giàu chất xơ và chất chống oxy hóa rutin.</li>
+                </ul>
+                <br>
+
+                <h2>Phần Bình Luận</h2>
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+</body>
+</html>

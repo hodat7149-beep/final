@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gà Kung Pao (Cung Bảo Kê Đinh) Trung Quốc — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html" class="active">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">GÀ KUNG PAO</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://mia.vn/media/uploads/blog-du-lich/ga-cung-bao-4-1743332250.jpg" alt="Món Gà Kung Pao cay tê với ớt khô và đậu phộng." style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Món Gà Kung Pao cay tê với ớt khô và đậu phộng.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Gà Kung Pao (Gongbao Jiding) là một món ăn cổ điển và nổi tiếng của ẩm thực Tứ Xuyên, Trung Quốc. Món này nổi bật với vị **cay tê (Mala) đặc trưng** nhờ sự kết hợp của **ớt khô và tiêu Tứ Xuyên**, xào nhanh với thịt gà thái hạt lựu, đậu phộng rang giòn, và rau củ.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Tên gọi món ăn được đặt theo tên của Đinh Bảo Trinh (Ding Baozhen), một vị quan vào cuối triều đại nhà Thanh. Ông có tước hiệu "Gongbao" (Công Bảo) và được cho là rất yêu thích món gà xào này.
+                </p>
+                <ul>
+                    <li><strong>Hương vị:</strong> Sự cân bằng giữa vị chua, ngọt, cay và tê là điểm nhấn quan trọng nhất của món ăn.</li>
+                    <li><strong>Đậu phộng:</strong> Đậu phộng rang giòn là thành phần bắt buộc, giúp tăng kết cấu và độ béo.</li>
+                    <li><strong>Tứ Xuyên:</strong> Gà Kung Pao là một trong những món ăn đại diện cho ẩm thực Tứ Xuyên trên toàn thế giới.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Bí quyết là xào nhanh với lửa lớn và cân bằng hương vị chua, ngọt, cay, tê.</p>
+
+                <h3>1. Chuẩn bị gà và sốt</h3>
+                <ul>
+                    <li>Thịt gà thái hạt lựu, ướp với xì dầu, bột bắp và rượu gạo.</li>
+                    <li>Pha hỗn hợp sốt Kung Pao: Xì dầu, giấm đen, đường, rượu gạo, bột bắp.</li>
+                </ul>
+
+                <h3>2. Xào cay tê</h3>
+                <ul>
+                    <li>Phi thơm ớt khô và tiêu Tứ Xuyên trong dầu nóng để tạo hương vị cay tê. Vớt ớt và tiêu ra nếu không muốn quá cay.</li>
+                </ul>
+
+                <h3>3. Xào thịt và hoàn thành</h3>
+                <ul>
+                    <li>Xào thịt gà đã ướp đến khi săn. Thêm rau củ.</li>
+                    <li>Đổ nước sốt đã pha vào chảo, đảo nhanh cho sốt sánh lại và bám đều. Cuối cùng, cho đậu phộng rang giòn vào, đảo nhẹ.</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Gà Kung Pao chuẩn vị Tứ Xuyên:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/sGkVGByh2l4?si=V7lbnQViKMus0CnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

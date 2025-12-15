@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tteokbokki — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html" class="active">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">TTEOKBOKKI (BÁNH GẠO CAY)</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1679581083909-daf9604102ac?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tteokbokki Hàn Quốc" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Tteokbokki - Món ăn đường phố cay ngọt</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Tteokbokki là món ăn đường phố nổi tiếng của Hàn Quốc, được làm từ **bánh gạo dẻo mềm** (Tteok) nấu trong nước sốt cay ngọt đặc trưng. Đây là món ăn quen thuộc, được yêu thích nhờ hương vị đậm đà, cay nồng và thơm ngon.
+                </p>
+                <br>
+                
+                <h2>Nguyên Liệu Chính</h2>
+                <ul>
+                    <li>Bánh gạo Hàn Quốc (Tteok), Chả cá Hàn Quốc.</li>
+                    <li>Tương ớt Gochujang, Tương đậu Gochugaru.</li>
+                    <li>Hành lá, Tỏi, Đường, Nước tương.</li>
+                    <li>Nước dùng (dashi) hoặc nước lọc.</li>
+                    <li>Trứng luộc (tuỳ chọn).</li>
+                </ul>
+                <br>
+
+                <h2>Cách Nấu Chi Tiết</h2>
+                <p>Cách nấu Tteokbokki để bánh gạo dẻo và thấm vị:</p>
+                <ol>
+                    <li><strong>Sơ chế:</strong> Ngâm bánh gạo nếu bị cứng. Cắt chả cá thành miếng vừa ăn.</li>
+                    <li><strong>Pha sốt:</strong> Nấu nước dùng với tương ớt Gochujang, tương đậu Gochugaru, đường, tỏi và nước tương để tạo sốt cay đỏ.</li>
+                    <li><strong>Nấu:</strong> Cho bánh gạo và chả cá vào nấu. Đun nhỏ lửa cho đến khi bánh gạo mềm, dai và thấm đều gia vị.</li>
+                    <li><strong>Hoàn thành:</strong> Thêm hành lá cắt khúc và trứng luộc nếu muốn. Nấu đến khi nước sốt sệt lại, sau đó múc ra đĩa và rắc thêm mè rang.</li>
+                </ol>
+                <br>
+
+                <h2>Video Hướng Dẫn</h2>
+                <p>Xem video dưới đây để biết cách làm Tteokbokki chuẩn vị Hàn Quốc:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mVOjhmKcfa8?si=sK9rV4FKir9kpzEp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <h2>Nguồn gốc & Sự Thật Thú Vị (Facts)</h2>
+                <p>
+                    Tteokbokki xuất hiện từ thời Joseon và ban đầu không cay. Về sau, khi tương ớt gochujang phổ biến, món ăn được biến tấu thành phiên bản cay đỏ rực mà ngày nay được biết đến như biểu tượng ẩm thực đường phố Hàn Quốc.
+                </p>
+                <ul>
+                    <li>**Biến thể:** Có nhiều biến thể như: kem phô mai, cay cấp độ mạnh, hải sản...</li>
+                    <li>**Văn hóa:** Tteokbokki là một trong những món ăn đường phố bán chạy nhất và xuất hiện thường xuyên trong phim Hàn.</li>
+                </ul>
+                <br>
+
+                <h2>Phần Bình Luận</h2>
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+</body>
+</html>

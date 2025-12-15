@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vịt Quay Bắc Kinh — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+    <canvas id="snow"></canvas> 
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html" class="active">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">VỊT QUAY BẮC KINH</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://heoquayhungky.com/watermark/product/600x435x1/upload/product/52086-vit-quay-bac-kinh-670x446-3782.jpg" alt="Vịt quay Bắc Kinh" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Vịt quay Bắc Kinh da giòn vàng óng</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Vịt quay Bắc Kinh là món ăn nổi tiếng của ẩm thực Trung Quốc, đặc trưng với lớp **da giòn vàng óng**, thịt mềm ngọt và hương vị đậm đà. Món ăn thường được ăn kèm bánh tráng mỏng, hành tươi và nước sốt đặc biệt.
+                </p>
+                <br>
+                
+                <h2>Nguyên Liệu Chính</h2>
+                <ul>
+                    <li>1 con vịt</li>
+                    <li>Mật ong hoặc maltose, Nước tương, Rượu gạo</li>
+                    <li>Gừng, tỏi, Gia vị ngũ hương</li>
+                    <li>Bánh mỏng cuốn, Hành lá, Dưa leo</li>
+                    <li>Nước sốt đặc biệt</li>
+                </ul>
+                <br>
+
+                <h2>Cách Nấu Chi Tiết</h2>
+                <p>Quá trình chế biến Vịt Quay Bắc Kinh rất công phu để đảm bảo lớp da giòn đặc trưng:</p>
+                <ol>
+                    <li><strong>Sơ chế:</strong> Rửa sạch vịt và hong khô da. **Thổi phồng da vịt bằng hơi** để đạt độ giòn khi nướng.</li>
+                    <li><strong>Ướp & Hong khô:</strong> Quét hỗn hợp mật ong, nước tương, rượu và gia vị lên da vịt. Treo vịt để hong khô trong vài giờ (hoặc ít nhất 24 giờ).</li>
+                    <li><strong>Quay/Nướng:</strong> Nướng vịt ở nhiệt độ cao trong lò hoặc quay trên lửa đến khi da giòn vàng.</li>
+                    <li><strong>Thưởng thức:</strong> Thái lát mỏng thịt và da vịt. Ăn kèm bánh cuốn mỏng, hành, dưa leo và chấm với nước sốt đặc biệt.</li>
+                </ol>
+                <br>
+
+                <h2>Video Hướng Dẫn</h2>
+                <p>Xem video dưới đây để biết cách làm Vịt Quay Bắc Kinh:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WWjPxkoY1ds?si=zUe886PXD8RRX3qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <h2>Nguồn gốc & Sự Thật Thú Vị (Facts)</h2>
+                <p>
+                    Vịt quay Bắc Kinh xuất hiện từ thời nhà Nguyên và trở thành đặc sản hoàng gia dưới triều Minh – Thanh. Ngày nay, món ăn được xem như biểu tượng của ẩm thực Trung Hoa.
+                </p>
+                <ul>
+                    <li><strong>Lịch sử:</strong> Đây là món ăn từng được phục vụ cho hoàng gia Trung Quốc suốt nhiều thế kỷ.</li>
+                    <li><strong>Kỹ thuật:</strong> Kỹ thuật thổi phồng da vịt là yếu tố tạo nên độ giòn đặc trưng.</li>
+                </ul>
+                <br>
+
+                <h2>Phần Bình Luận</h2>
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+</body>
+</html>

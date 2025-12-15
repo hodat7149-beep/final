@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún Chả Hà Nội — Snacken.</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html" class="active">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">BÚN CHẢ HÀ NỘI</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1763703544688-2ac7839b0659?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bún Chả Hà Nội" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Bún Chả - Món ăn đặc trưng của Hà Nội.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Bún Chả là một món ăn truyền thống nổi tiếng của Hà Nội, Việt Nam. Món ăn này gồm **bún tươi, chả thịt heo nướng** trên than hoa (chả viên và chả miếng) và nước chấm chua ngọt có đu đủ xanh, cà rốt muối chua, tất cả được ăn kèm với rau sống đa dạng.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Bún Chả là món ăn dân dã, lâu đời của người Hà Nội, thường được bán vào buổi trưa. Món ăn này trở nên nổi tiếng toàn cầu khi được cố Tổng thống Mỹ Barack Obama và đầu bếp Anthony Bourdain thưởng thức trong chuyến thăm Việt Nam năm 2016.
+                </p>
+                <ul>
+                    <li><strong>Than hoa:</strong> Chả được nướng trên than hoa để tạo ra hương vị khói thơm đặc trưng mà bếp nướng điện/ga không thể có được.</li>
+                    <li><strong>Nước chấm:</strong> Nước chấm là linh hồn của món ăn, phải có đủ vị chua, cay, mặn, ngọt và độ ấm nóng vừa phải để chan vào bún và chả.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Món Bún Chả ngon nhất là khi chả được nướng vừa tới và nước chấm được pha chuẩn.</p>
+
+                <h3>1. Ướp và nướng Chả</h3>
+                <ul>
+                    <li>Thịt nạc vai và thịt ba chỉ được xay hoặc thái mỏng, ướp với hành tím, nước mắm, tiêu.</li>
+                    <li>Nặn chả viên và xiên chả miếng vào que tre hoặc vỉ, nướng trên than hồng cho đến khi vàng đều và dậy mùi thơm.</li>
+                </ul>
+
+                <h3>2. Pha nước chấm</h3>
+                <ul>
+                    <li>Pha nước mắm, đường, nước lọc, chanh/giấm theo tỷ lệ cân bằng.</li>
+                    <li>Thêm tỏi, ớt băm và đu đủ xanh, cà rốt thái lát mỏng ngâm chua.</li>
+                </ul>
+
+                <h3>3. Trình bày và thưởng thức</h3>
+                <ul>
+                    <li>Cho chả nướng vào bát nước chấm nóng.</li>
+                    <li>Bún tươi, rau sống được bày riêng. Gắp bún, rau sống chấm vào bát nước chấm có chả và thưởng thức.</li>
+                </ul>
+                
+                <h3>4. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Bún Chả Hà Nội thơm ngon, chuẩn vị:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tcbSm6nSUhM?si=ZCzv_M6llwOkxJom" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+
+    <script>
+      window.onload = function() {
+        // Khởi tạo 3D Background
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        // Cập nhật năm
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Gọi hàm reveal() từ script.js để áp dụng Scroll Reveal cho các section
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        // Khởi tạo Menu Mobile (nếu chưa được xử lý trong script.js)
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

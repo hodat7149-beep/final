@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibimbap (Cơm Trộn) — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> 
+
+    <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html" class="active">Hàn Quốc</a>
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px;">BIBIMBAP (CƠM TRỘN)</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://plus.unsplash.com/premium_photo-1671559021964-dff933bedb0d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bibimbap (Cơm Trộn Hàn Quốc)" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Bibimbap đầy màu sắc và dinh dưỡng</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Bibimbap nghĩa đen là "cơm trộn" (Bibim = trộn, Bap = cơm). Đây là một món ăn truyền thống Hàn Quốc gồm cơm trắng được phủ lên trên bằng nhiều loại rau đã nêm gia vị (như cà rốt, rau bina, giá đỗ), thịt (thường là thịt bò), trứng chiên hoặc trứng ốp la, và một muỗng tương ớt cay Gochujang. Khi ăn, tất cả được trộn đều lên.
+                </p>
+                <br>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Bibimbap có nguồn gốc từ thời đại Joseon và thường được dùng trong các dịp lễ tết hoặc cuối năm như một cách để tiêu thụ hết thức ăn còn sót lại trước khi năm mới bắt đầu.
+                </p>
+                <ul>
+                    <li><strong>Dolsot Bibimbap:</strong> Là Bibimbap được phục vụ trong nồi đá nóng, tạo ra lớp cơm cháy giòn rụm ở đáy.</li>
+                    <li><strong>Ngũ sắc:</strong> Các nguyên liệu của Bibimbap thường tuân theo nguyên tắc ngũ sắc (trắng, đen, xanh, đỏ, vàng) tượng trưng cho ngũ hành và mang ý nghĩa sức khỏe.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                <p>Chìa khóa của món Bibimbap là sự chuẩn bị và nêm nếm riêng từng loại rau củ.</p>
+
+                <h3>1. Chuẩn bị Topping</h3>
+                <ul>
+                    <li>Thịt bò thái mỏng, ướp gia vị (xì dầu, tỏi, đường).</li>
+                    <li>Các loại rau củ (cà rốt, bí ngòi, nấm, giá đỗ, rau bina) được luộc hoặc xào nhẹ với chút muối, dầu mè.</li>
+                    <li>Trứng ốp la hoặc chiên lòng đào.</li>
+                </ul>
+
+                <h3>2. Trình bày</h3>
+                <ul>
+                    <li>Cho cơm trắng nóng vào tô. Xếp các loại rau củ và thịt đã chuẩn bị xung quanh.</li>
+                    <li>Đặt trứng lên trên cùng, sau đó là một muỗng tương ớt Gochujang.</li>
+                    <li>Khi ăn, trộn tất cả các nguyên liệu lại với nhau.</li>
+                </ul>
+                
+                <h3>3. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Bibimbap truyền thống:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J730p50xtu4?si=nfQRsNw8w-LPwGeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    
+    <script src="snow.js"></script> 
+
+    <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>

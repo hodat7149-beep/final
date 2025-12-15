@@ -1,0 +1,276 @@
+/* China.css */
+/* Reset cơ bản và font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --neon-color: #00ffc6;
+  --bg-dark: #0d0d0d;
+  --card-bg: #141414;
+  --text-light: #eaeaea;
+  --text-muted: #ccc;
+  --border-color: #333;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* CANVAS SNOW */
+#snow-china {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Đảm bảo tuyết ở dưới nội dung */
+}
+
+/* HEADER - Navbar */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--neon-color);
+  text-decoration: none;
+}
+
+.navbar a {
+  margin-left: 25px;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: 0.2s ease;
+  padding: 5px 0;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--neon-color);
+  text-shadow: 0 0 8px var(--neon-color);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--neon-color);
+}
+
+/* MAIN CONTENT */
+.container {
+  padding: 120px 8% 50px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.allfoods {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--neon-color);
+  text-shadow: 0 0 10px var(--neon-color);
+  /* Scroll Reveal Init */
+  opacity: 0; 
+  transform: translateY(20px);
+  transition: 1s ease-out;
+}
+
+/* Card Section */
+.all__card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: 0.5s ease;
+  box-shadow: 0 0 0 transparent;
+
+  /* Scroll Reveal Init */
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s ease-out;
+}
+
+/* Hiệu ứng neon nhẹ khi hover */
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 198, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Đảo chiều card cho các mục lẻ (1, 3, 5) */
+.card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.card .left {
+  flex: 1;
+}
+
+.card .left h2 {
+  font-size: 32px;
+  color: var(--neon-color);
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px var(--neon-color);
+}
+
+.card .left p {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.card .media {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 198, 0.5); 
+}
+
+.card .media img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .media figcaption {
+  padding: 8px 15px;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--text-light);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Nút CTA */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: var(--neon-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--bg-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px var(--neon-color);
+  background: var(--neon-color);
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #888;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CLASSES CHO JAVASCRIPT SCROLL REVEAL */
+.allfoods.reveal-visible,
+.card.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .container {
+    padding: 100px 5% 50px;
+  }
+
+  /* Thay đổi bố cục card */
+  .card,
+  .card:nth-child(odd) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card .left,
+  .card .media {
+    width: 100%;
+  }
+
+  .card .media {
+    margin-top: 20px;
+  }
+
+  .card .left h2 {
+    font-size: 28px;
+  }
+
+  .card .media img {
+    height: 200px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  /* Menu Mobile */
+  .menu-toggle {
+    display: block; /* Hiển thị nút ☰ */
+  }
+
+  /* Đây là khối CSS quyết định menu hiển thị dọc */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* ĐẨY MENU RA NGOÀI (ẨN) */
+    background: #000;
+    width: 70%;
+    height: 100vh;
+    padding-top: 120px;
+    text-align: center;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column; /* QUAN TRỌNG: CHUYỂN CÁC MỤC THÀNH CHIỀU DỌC */
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin: 15px 0;
+    display: block; /* Đảm bảo mỗi liên kết chiếm một dòng */
+  }
+
+  .navbar.active {
+    right: 0; /* HIỆN MENU (BUNG TỪ BÊN PHẢI VÀO) */
+  }
+
+  /* ... Các quy tắc responsive khác ... */
+}

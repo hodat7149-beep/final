@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mì Lạnh Naengmyeon — Snacken.</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="plasma-bg"></div>
+
+    <canvas id="snow"></canvas> <canvas id="bg3d"></canvas>
+
+    <header class="navbar"> 
+        <a href="index.html" class="logo">Snacken.</a>
+
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+            <a href="japanese.html">Nhật Bản</a>
+            <a href="Korea.html" class="active">Hàn Quốc</a> 
+            <a href="china.html">Trung Quốc</a>
+            <a href="Vietnam.html">Việt Nam</a> 
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section food-hero" style="padding-top: 100px;">
+            <div class="text">
+                <h1 class="title" style="font-size: 60px";>MÌ LẠNH NAENGMYEON</h1>
+            </div>
+            <figure class="media-container">
+                <img src="https://images.unsplash.com/photo-1583032015879-e5022cb87c3b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mì lạnh Naengmyeon" style="width: 100%; max-width: 800px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 0 15px #00ffc6;">
+                <figcaption style="text-align: center; color: #999;">Mì lạnh Naengmyeon giải nhiệt mùa hè.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section about" style="padding: 50px 50px 100px;">
+            <div class="text" style="max-width: 900px; margin: auto; text-align: left;">
+                <h2>Thông tin chung</h2>
+                <p>
+                    Mì lạnh (Naengmyeon) là món ăn phổ biến, gồm mì được làm lạnh ăn kèm nước dùng **chua ngọt hoặc cay nhẹ**, thường kết hợp với rau củ, trứng và thịt. Món này mang lại cảm giác mát lạnh, giải nhiệt tuyệt vời vào mùa hè.<br><br>
+                </p>
+                
+                <h2>Nguồn gốc & Thông tin thú vị (Facts)</h2>
+                <p>
+                    Món ăn có nguồn gốc từ Hàn Quốc (Naengmyeon), xuất hiện từ thời triều đại Joseon, ban đầu được phục vụ tại cung đình.
+                </p>
+                <ul>
+                    <li><strong>Món ăn mùa đông:</strong> Ban đầu, Naengmyeon được thưởng thức vào mùa đông ở miền Bắc Triều Tiên (nay là Bắc Triều Tiên), nơi có nhiệt độ lạnh giúp nước dùng dễ dàng đông đá.</li>
+                    <li><strong>Đa dạng:</strong> Có hai loại chính là *Mul Naengmyeon* (mì nước lạnh) và *Bibim Naengmyeon* (mì trộn cay).</li>
+                    <li><strong>Sợi mì:</strong> Sợi mì Naengmyeon truyền thống được làm từ kiều mạch, có độ dai đặc trưng.</li>
+                </ul>
+                <br>
+                
+                <h2>Cách chế biến chi tiết</h2>
+                
+                <h3>1. Chuẩn bị Nguyên liệu</h3>
+                <ul>
+                    <li>Mì được làm từ khoai tây hoặc lúa mì (mì Naengmyeon). Sau khi luộc, mì được xả qua nước lạnh và để ráo.</li>
+                    <li>Nước dùng xương bò lạnh hoặc nước dùng chua ngọt/cay đã được chuẩn bị sẵn.</li>
+                    <li>Dưa chuột thái sợi, củ cải muối, trứng luộc và thịt bò luộc thái lát mỏng.</li>
+                </ul>
+
+                <h3>2. Trình bày</h3>
+                <ul>
+                    <li>Mì được cho vào tô, thêm nước dùng đã ướp lạnh.</li>
+                    <li>Bày biện dưa chuột, củ cải, trứng và thịt bò lên trên.</li>
+                    <li>Món này thường được thêm đá bào vào nước dùng để giữ độ lạnh tuyệt đối.</li>
+                </ul>
+
+                <h3>3. Video hướng dẫn</h3>
+                <p>Xem video dưới đây để biết cách làm Naengmyeon truyền thống tại nhà:</p>
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q3rPIDOmYSM?si=lroWc_LvxSBwEpzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <h2>Phần Bình Luận</h2>
+
+                <form class="contact-form" style="width: 100%; margin: 20px 0 0 0;">
+                    <label style="color: #00ffc6;">Nhập tên:</label>
+                    <input type="text" name="ten" placeholder="Tên của bạn">
+
+                    <label style="color: #00ffc6;">Bình luận:</label>
+                    <textarea name="comment" rows="4" placeholder="Ý kiến của bạn"></textarea>
+
+                    <button type="submit">Gửi bình luận</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Snacken. All rights reserved.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script> <script>
+      window.onload = function() {
+        if (typeof initBG === 'function') {
+            initBG(); 
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof reveal === 'function') {
+            reveal(); 
+        }
+
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.querySelector(".menu");
+        
+        if(menuBtn && menu) {
+            menuBtn.onclick = () => {
+                menu.classList.toggle("active");
+            };
+        }
+      };
+    </script>
+
+</body>
+</html>
